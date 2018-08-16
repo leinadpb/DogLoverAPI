@@ -1,0 +1,14 @@
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\bin\Debug\netcoreapp2.1\DogLoverAPI.deps.json
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\bin\Debug\netcoreapp2.1\DogLoverAPI.runtimeconfig.json
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\bin\Debug\netcoreapp2.1\DogLoverAPI.runtimeconfig.dev.json
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\bin\Debug\netcoreapp2.1\DogLoverAPI.dll
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\obj\Debug\netcoreapp2.1\DogLoverAPI.csprojAssemblyReference.cache
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\obj\Debug\netcoreapp2.1\DogLoverAPI.csproj.CoreCompileInputs.cache
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\obj\Debug\netcoreapp2.1\DogLoverAPI.RazorAssemblyInfo.cache
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\obj\Debug\netcoreapp2.1\DogLoverAPI.RazorAssemblyInfo.cs
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\obj\Debug\netcoreapp2.1\DogLoverAPI.AssemblyInfoInputs.cache
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\obj\Debug\netcoreapp2.1\DogLoverAPI.AssemblyInfo.cs
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\obj\Debug\netcoreapp2.1\DogLoverAPI.RazorTargetAssemblyInfo.cache
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\bin\Debug\netcoreapp2.1\DogLoverAPI.pdb
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\obj\Debug\netcoreapp2.1\DogLoverAPI.dll
+c:\users\leinad\source\repos\DogLoverAPI\DogLoverAPI\obj\Debug\netcoreapp2.1\DogLoverAPI.pdb
