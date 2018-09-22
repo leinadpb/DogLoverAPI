@@ -14,6 +14,7 @@ using DogLoverAPI.Models;
 using DogLoverAPI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using DogLoverAPI.Data;
 
 namespace DogLoverAPI
 {
@@ -32,7 +33,7 @@ namespace DogLoverAPI
             // ---- Framework services
             
             //DbContext
-            services.AddDbContext<DogLoverContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevelopmentDB")));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevelopmentDB")));
             //Token Validation
             services.AddAuthentication(options =>
             {
@@ -48,7 +49,7 @@ namespace DogLoverAPI
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // ---- Application services
-            services.AddScoped<IDogService, DogService>();
+            services.AddScoped<DogService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,7 +65,9 @@ namespace DogLoverAPI
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(config => {
+                config.MapRoute("MainAPIRoute", "api/{controller}/{action}");
+            });
         }
     }
 }

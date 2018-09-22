@@ -27,7 +27,7 @@ namespace DogLoverAPI.Services
          * Creator:
          *      Not specified yet.
          * */
-        Task Add(Dog dog);
+        Task<Dog> Add(Dog dog);
         /**
          * Summary:
          *      Delete an existing dog.

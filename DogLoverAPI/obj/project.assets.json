@@ -12214,7 +12214,8 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
+      "Newtonsoft.Json >= 11.0.2"
     ]
   },
   "packageFolders": {
@@ -12224,11 +12225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\leinad\\source\\repos\\DogLoverAPI\\DogLoverAPI\\DogLoverAPI.csproj",
+      "projectUniqueName": "C:\\Users\\LEINAD\\source\\repos\\DogLoverAPI\\DogLoverAPI\\DogLoverAPI.csproj",
       "projectName": "DogLoverAPI",
-      "projectPath": "c:\\users\\leinad\\source\\repos\\DogLoverAPI\\DogLoverAPI\\DogLoverAPI.csproj",
+      "projectPath": "C:\\Users\\LEINAD\\source\\repos\\DogLoverAPI\\DogLoverAPI\\DogLoverAPI.csproj",
       "packagesPath": "C:\\Users\\LEINAD\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\leinad\\source\\repos\\DogLoverAPI\\DogLoverAPI\\obj\\",
+      "outputPath": "C:\\Users\\LEINAD\\source\\repos\\DogLoverAPI\\DogLoverAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12272,6 +12273,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.1.1, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[11.0.2, )"
           }
         },
         "imports": [

@@ -3,21 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DogLoverAPI.Models;
-
+using DogLoverAPI.Data;
 namespace DogLoverAPI.Services
 {
     public class DogService : IDogService
     {
-        private readonly DogLoverContext _context;
+        private readonly AppDbContext _context;
 
-        public DogService(DogLoverContext ctx) //Inject DogLoverDbContext into this Service
+        public DogService(AppDbContext ctx) //Inject DbContext into this Service
         {
             this._context = ctx;
         }
 
-        public Task Add(Dog dog)
+        public Task<Dog> Add(Dog dog)
         {
-            throw new NotImplementedException();
+            return Task.Run(() => {
+                try
+                {
+                    _context.Dogs.Add(dog);
+                    _context.SaveChanges();
+                    return dog;
+                }catch(Exception exp)
+                {
+                    Console.WriteLine($"Error: {exp}");
+                }
+                return null;
+            });
         }
 
         public Task Delete(Dog dog)
@@ -27,12 +38,36 @@ namespace DogLoverAPI.Services
 
         public Task<Dog> Get(int dogId)
         {
-            throw new NotImplementedException();
+            return Task.Run(() => {
+                try
+                {
+                    var dog = _context.Dogs.Where(d => d.DogId == dogId).First();
+                    if(dog != null)
+                        return dog;
+
+                }catch(Exception exp)
+                {
+                    Console.WriteLine($"Error: {exp}");
+                }
+                return null;
+            });
         }
 
         public Task<IEnumerable<Dog>> GetAll()
         {
-            throw new NotImplementedException();
+            return Task.Run(() => {
+
+                try
+                {
+                    var dogs = _context.Dogs.AsEnumerable();
+                    return dogs;
+                }catch(Exception exp)
+                {
+                    Console.WriteLine($"Error on getting dogs: {exp}");
+                }
+
+                return null;
+            });
         }
 
         public Task<IEnumerable<Dog>> GetByAge(int age)
